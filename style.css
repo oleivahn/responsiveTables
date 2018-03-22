@@ -1,0 +1,66 @@
+body {
+    font-family: 'Tahoma', sans-serif;
+    background: rgb(184, 184, 184);
+    color: #fff;
+}
+
+h1 {
+    background-color: rgb(0, 119, 255);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.col{
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+    box-sizing: border-box; 
+    /* box-sizing: It includes all the padding inside the width. Even the one already assigned to it by default/ width: 99.9% accurate*/
+}
+
+.price-box {
+    background-color: #fff;
+    color: #555;
+    list-style-type: none;
+    border: 1px solid #555;
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+}
+
+.price-box:hover, .price-box.best {
+    box-shadow: 0 10px 15px 0 rgb(28, 110, 187);
+}
+
+.price-box .header {
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+} 
+
+.price-box li {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.price-box .emph {
+    background-color: #f4f4f4;
+    font-size: 20px;
+}
+
+.button {
+    background: #4caf50;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+
+@media(max-width:700px){
+    .col{
+        width: 100%;
+    }
+}
